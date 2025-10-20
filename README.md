@@ -13,8 +13,6 @@ cd examen-fundamentos
 # Instalar dependencias
 pip install -r requirements.txt
 
-# Verificar instalación
-python verificar_sistema.py
 ```
 
 ### Ejecutar el Juego
