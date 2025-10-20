@@ -118,35 +118,10 @@ stats = visualizador.ejecutar_con_visualizacion(max_iteraciones=300)
 - **Memoria RAM**: ~100MB para mundos medianos
 - **GPU**: No requerida (CPU rendering)
 
-## 🎓 Para el Examen
-
-### Presentación
-1. **Demo en vivo**: Usar `python agent/demo_pygame.py`
-2. **Explicación técnica**: Mostrar arquitectura modular
-3. **Análisis de resultados**: Usar reportes de simulación
-
 ### Documentación
 - `agent/README.md` - Documentación técnica completa
 - `docs/README_PYGAME.md` - Guía de visualización pygame
 - `docs/PYGAME_IMPLEMENTADO.md` - Detalles de implementación
-
-## 🔧 Desarrollo
-
-### Instalar en modo desarrollo
-```bash
-pip install -e .
-```
-
-### Ejecutar tests
-```bash
-python verificar_sistema.py
-```
-
-### Formatear código (opcional)
-```bash
-pip install black
-black agent/
-```
 
 ## 📈 Arquitectura
 
