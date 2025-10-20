@@ -123,16 +123,152 @@ La complejidad del problema radica en la naturaleza parcialmente observable del 
 
 \section{Metodología de Desarrollo del Proyecto}
 
-La metodología de desarrollo se estructura en las siguientes fases:
+La metodología de desarrollo del proyecto se estructura siguiendo un enfoque sistemático que abarca desde el análisis conceptual hasta la validación experimental. Esta metodología guía la estructura completa del presente informe, estableciendo correspondencia directa entre cada fase metodológica y las secciones del documento.
+
+\subsection{Estructura Metodológica}
+
+El desarrollo del proyecto sigue las siguientes fases metodológicas:
 
 \begin{enumerate}
-\item \textbf{Análisis Ontológico}: Identificación y definición de conceptos del dominio.
-\item \textbf{Diseño de Arquitectura}: Especificación de la estructura modular del sistema.
-\item \textbf{Implementación de Agentes}: Desarrollo de los agentes robot y monstruo.
-\item \textbf{Sistema de Visualización}: Implementación de interfaces de visualización.
-\item \textbf{Análisis de Rendimiento}: Desarrollo de métricas de evaluación.
-\item \textbf{Validación Experimental}: Pruebas y análisis de resultados.
+\item \textbf{Fase 1: Análisis Ontológico y Planteamiento del Problema}
+
+\textit{Objetivo}: Establecer el marco conceptual y definir formalmente el problema a resolver.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Identificación de conceptos primarios del dominio (Entorno, Celda, Robot, Monstruo, Zona)
+\item Definición ontológica de entidades, sensores, efectores y relaciones
+\item Identificación de conceptos adicionales no especificados en el enunciado
+\item Formulación formal del problema usando los conceptos ontológicos
+\item Establecimiento de restricciones y objetivos del sistema
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Secciones 2 (Ontología) y 3 (Planteamiento del Problema)
+
+\item \textbf{Fase 2: Diseño Conceptual de los Agentes}
+
+\textit{Objetivo}: Especificar la arquitectura y comportamiento de los agentes antes de la implementación.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Diseño de la arquitectura de capas del agente robot (Percepción, Memoria, Decisión, Actuación)
+\item Especificación de sensores: tipo, información capturada, precisión, limitaciones
+\item Especificación de efectores: acciones, efectos, precondiciones, costos
+\item Diseño del sistema de decisión jerárquico (4 niveles de prioridad)
+\item Diseño de estrategias adaptativas basadas en memoria
+\item Diseño del agente monstruo reflejo simple (parámetros K y p)
+\item Caracterización del ambiente según taxonomía AIMA
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Sección 5 (Diseño de los Agentes)
+
+\item \textbf{Fase 3: Implementación del Sistema Multi-Agente}
+
+\textit{Objetivo}: Construir el sistema computacional siguiendo las especificaciones de diseño.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Implementación del entorno hexaédrico 3D con zonas libres y vacías
+\item Implementación de los 5 sensores del robot con código Python
+\item Implementación de los 3 efectores del robot con código Python
+\item Implementación de la estructura de memoria interna
+\item Implementación de las reglas jerárquicas de decisión
+\item Implementación del protocolo de comunicación robot-robot
+\item Implementación del agente monstruo con movimiento probabilístico
+\item Implementación de métricas de rendimiento (puntuación, colisiones, movimientos)
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Sección 6 (Construcción de los Agentes)
+
+\item \textbf{Fase 4: Desarrollo de Sistemas de Visualización y Análisis}
+
+\textit{Objetivo}: Crear herramientas para observar y analizar el comportamiento del sistema.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Implementación de visualización interactiva 3D con Pygame (60 FPS)
+\item Implementación de controles de cámara y navegación
+\item Desarrollo de representación gráfica de robots, monstruos y entorno
+\item Implementación de análisis estadístico con Matplotlib
+\item Desarrollo de medida de racionalidad compuesta (4 componentes)
+\item Generación de gráficas de rendimiento y tablas de resultados
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Mencionado en Sección 6 (Construcción), visualizado en Sección 7 (Análisis de Resultados)
+
+\item \textbf{Fase 5: Experimentación y Análisis de Resultados}
+
+\textit{Objetivo}: Validar el sistema mediante experimentos controlados y analizar su rendimiento.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Diseño de configuraciones experimentales (4 escenarios: $3^3$, $5^5$, $7^7$, $8^3$)
+\item Ejecución de simulaciones con diferentes números de robots y monstruos
+\item Recolección de métricas: tasa de éxito, movimientos, colisiones, destrucciones
+\item Cálculo de medida de racionalidad compuesta para cada configuración
+\item Identificación de propiedades emergentes del sistema multi-agente
+\item Análisis comparativo de rendimiento entre configuraciones
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Sección 7 (Análisis de los Resultados)
+
+\item \textbf{Fase 6: Evaluación Crítica y Propuestas de Mejora}
+
+\textit{Objetivo}: Evaluar críticamente el sistema y proponer mejoras validadas experimentalmente.
+
+\textit{Actividades}:
+\begin{itemize}
+\item Formulación de conclusiones basadas en métricas cuantitativas
+\item Evaluación de cada componente del sistema (sensores, efectores, memoria, reglas)
+\item Identificación de propiedades emergentes del comportamiento multi-agente
+\item Propuesta de 3 recomendaciones de mejora
+\item Implementación experimental de las recomendaciones propuestas
+\item Validación de viabilidad de cada recomendación
+\end{itemize}
+
+\textit{Correspondencia en el informe}: Secciones 8 (Conclusiones) y 9 (Recomendaciones)
 \end{enumerate}
+
+\subsection{Congruencia Metodología-Informe}
+
+La tabla \ref{tab:metodologia_informe} muestra la correspondencia explícita entre las fases metodológicas y la estructura del informe:
+
+\begin{table}[H]
+\centering
+\caption{Correspondencia Metodología-Estructura del Informe}
+\label{tab:metodologia_informe}
+\begin{tabular}{@{}clc@{}}
+\toprule
+\textbf{Fase} & \textbf{Componente Metodológico} & \textbf{Sección del Informe} \\
+\midrule
+1 & Análisis Ontológico & Sección 2: Ontología \\
+1 & Planteamiento del Problema & Sección 3: Planteamiento \\
+\midrule
+2 & Diseño Conceptual & Sección 5: Diseño de Agentes \\
+\midrule
+3 & Implementación del Sistema & Sección 6: Construcción \\
+\midrule
+4 & Visualización y Análisis & Secciones 6 y 7 \\
+\midrule
+5 & Experimentación & Sección 7: Análisis Resultados \\
+\midrule
+6 & Evaluación y Mejoras & Sección 8: Conclusiones \\
+6 & Propuestas Validadas & Sección 9: Recomendaciones \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Justificación del Enfoque Metodológico}
+
+El enfoque metodológico adoptado se justifica por:
+
+\begin{itemize}
+\item \textbf{Sistematicidad}: Cada fase se construye sobre la anterior, garantizando coherencia
+\item \textbf{Trazabilidad}: Cada decisión de diseño o implementación se rastrea desde la ontología
+\item \textbf{Validación empírica}: Todas las afirmaciones se respaldan con datos experimentales
+\item \textbf{Reproducibilidad}: La metodología documentada permite replicar el desarrollo
+\item \textbf{Congruencia}: La estructura del informe refleja fielmente el proceso metodológico
+\end{itemize}
 
 \section{Diseño de los Agentes}
 
