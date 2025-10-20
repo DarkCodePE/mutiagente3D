@@ -1,0 +1,15 @@
+# Sistema Multi-Agente 3D: Robots Monstruicidas
+# Dependencias del proyecto
+
+# Dependencias principales
+numpy>=1.21.0
+matplotlib>=3.5.0
+pygame>=2.1.0
+
+# Dependencias opcionales para desarrollo
+# pytest>=7.0.0          # Para testing (opcional)
+# black>=22.0.0           # Para formateo de código (opcional)
+# flake8>=4.0.0           # Para linting (opcional)
+
+# Notas de instalación:
+# pip install -r requirements.txt

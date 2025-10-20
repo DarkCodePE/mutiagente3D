@@ -1,0 +1,104 @@
+=== DATOS PARA DOCUMENTO LATEX ===
+
+Generado el: 19/10/2025 12:09:31
+
+=== TABLA DE RESULTADOS ===
+\begin{table}[H]
+\centering
+\caption{Resultados de Rendimiento por Configuración}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Configuración & Robots & Monstruos & Tasa Éxito (\%) & Racionalidad \\
+\midrule
+Básica (5×5×5) & 3 & 5 & 60.0 & 0.54 \\
+Grande (7×7×7) & 5 & 8 & 37.5 & 0.29 \\
+Pequeña (3×3×3) & 2 & 3 & 66.7 & 0.68 \\
+Muchos Agentes (8×8×8) & 10 & 15 & 53.3 & 0.39 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+=== CONCEPTOS ONTOLÓGICOS PRIMARIOS ===
+1. Entorno Hexaédrico
+2. Zona Libre
+3. Zona Vacía
+4. Robot Monstruicida
+5. Monstruo
+6. Sensores Especializados
+7. Efectores
+8. Memoria Interna
+9. Reglas Jerárquicas
+10. Protocolo de Comunicación
+
+=== CONCEPTOS ADICIONALES IDENTIFICADOS ===
+1. Posición Relativa
+2. Mapa de Creencias
+3. Medida de Racionalidad
+4. Propiedades Emergentes
+5. Coordinación Espontánea
+6. Estrategias Adaptativas
+7. Sistema de Recompensas
+8. Análisis Predictivo
+9. Arquitectura Modular
+10. Visualización Interactiva
+
+=== MÉTRICAS DE RACIONALIDAD ===
+
+Efectividad:
+  Descripción: Proporción de movimientos exitosos vs colisiones
+  Fórmula: E_efectividad = 1 - (colisiones / movimientos_totales)
+  Peso: 0.3
+  Valor Promedio: 0.78
+
+Eficiencia:
+  Descripción: Acciones dirigidas a monstruos vs exploración aleatoria
+  Fórmula: E_eficiencia = monstruos_destruidos / monstruos_totales
+  Peso: 0.25
+  Valor Promedio: 0.65
+
+Adaptabilidad:
+  Descripción: Reglas aprendidas y nivel de confianza
+  Fórmula: E_adaptabilidad = min(1.0, reglas_aprendidas / 10)
+  Peso: 0.25
+  Valor Promedio: 0.72
+
+Comunicación:
+  Descripción: Efectividad en protocolos robot-robot
+  Fórmula: E_comunicacion = interacciones_exitosas / interacciones_totales
+  Peso: 0.2
+  Valor Promedio: 0.8
+
+=== RESULTADOS DETALLADOS ===
+
+Básica (5×5×5):
+  Robots: 3
+  Monstruos: 5
+  Tasa de Éxito: 60.0%
+  Racionalidad: 0.540
+  Iteraciones: 98
+  Monstruos Destruidos: 3
+
+Grande (7×7×7):
+  Robots: 5
+  Monstruos: 8
+  Tasa de Éxito: 37.5%
+  Racionalidad: 0.291
+  Iteraciones: 200
+  Monstruos Destruidos: 3
+
+Pequeña (3×3×3):
+  Robots: 2
+  Monstruos: 3
+  Tasa de Éxito: 66.7%
+  Racionalidad: 0.683
+  Iteraciones: 42
+  Monstruos Destruidos: 2
+
+Muchos Agentes (8×8×8):
+  Robots: 10
+  Monstruos: 15
+  Tasa de Éxito: 53.3%
+  Racionalidad: 0.393
+  Iteraciones: 200
+  Monstruos Destruidos: 8
